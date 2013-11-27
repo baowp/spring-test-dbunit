@@ -4,3 +4,5 @@
 target
 spring-test-dbunit/src/site/markdown/index.md
 bin
+*.iml
+.idea
