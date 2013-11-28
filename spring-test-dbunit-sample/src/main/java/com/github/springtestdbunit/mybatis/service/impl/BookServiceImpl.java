@@ -21,6 +21,10 @@ public class BookServiceImpl implements BookService {
     @Resource
     private BookMapper bookMapper;
 
+    public int insert(BookEntity book) {
+        return bookMapper.insert(book);
+    }
+
     public List<BookEntity> list() {
         return bookMapper.list();
     }

@@ -12,5 +12,8 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public interface BookService {
+
+    int insert(BookEntity book);
+
     List<BookEntity> list();
 }
