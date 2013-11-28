@@ -1,7 +1,7 @@
 package com.github.springtestdbunit.mybatis.service;
 
 import com.github.springtestdbunit.annotation.DatabaseSetup;
-import com.github.springtestdbunit.mybatis.MockitoContextTests;
+import com.github.springtestdbunit.mybatis.TransactionalContextTests;
 import com.github.springtestdbunit.mybatis.entity.BookEntity;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -23,7 +23,7 @@ import static org.junit.Assert.assertEquals;
 @ContextConfiguration(inheritLocations = false)
 //(locations = "classpath:com/github/springtestdbunit/mybatis/service/BookServiceTest2-context.xml")
 //or locations = "BookServiceTest2-context.xml
-public class BookServiceTest extends MockitoContextTests {
+public class BookServiceTest extends TransactionalContextTests {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
     @Resource
